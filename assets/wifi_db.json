@@ -2,12 +2,12 @@
   {
     "ssid": "iQOO Z9x 5G",
     "password_encrypted": "cGhvbmVwYXk=",
-    "location": { "latitude": 28.8540033, "longitude": 78.7726417 }
+    "location": { "latitude": 28.6743814, "longitude": 77.5047608 }
   },
   {
     "ssid": "ScrapGenie_Office",
     "password_encrypted": "c2NnQGRtaW4yMDI0",
-    "location": { "latitude": 19.121611, "longitude": 72.882993 }
+    "location": { "latitude": 28.6743693, "longitude": 77.5046689 }
   },
   {
     "ssid": "PromptCue_WiFi",
