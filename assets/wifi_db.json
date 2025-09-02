@@ -1,9 +1,5 @@
 [
-  {
-    "ssid": "iQOO Z9x 5G",
-    "password_encrypted": "cGhvbmVwYXk=",
-    "location": { "latitude": 28.6743814, "longitude": 77.5047608 }
-  },
+
   {
     "ssid": "ScrapGenie_Office",
     "password_encrypted": "c2NnQGRtaW4yMDI0",
@@ -18,5 +14,11 @@
     "ssid": "InderHome_5G",
     "password_encrypted": "SW5kZXIxMjM0NQ==",
     "location": { "latitude": 19.105870, "longitude": 72.869210 }
+  },
+   {
+    "ssid": "iQOO Z9x 5G",
+    "password_encrypted": "cGhvbmVwYXk=",
+    "bssid" :"be:25:08:90:cb:df",
+    "location": { "latitude": 28.6748 , "longitude": 77.5036 }
   }
 ]
