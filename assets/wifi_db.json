@@ -20,5 +20,10 @@
     "password_encrypted": "cGhvbmVwYXk=",
     "bssid" :"be:25:08:90:cb:df",
     "location": { "latitude": 28.6748 , "longitude": 77.5036 }
+  },
+  {
+    "ssid": "ONEPLUS papa",
+    "password_encrypted": "somepass",
+    "location": { "latitude": 34.052235, "longitude": -118.243683 }
   }
 ]
