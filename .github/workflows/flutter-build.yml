@@ -1,46 +1,29 @@
-name: Build Flutter APK
-
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
-
 jobs:
-  build-apk:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      # Setup Java (required by Android/Gradle)
-      - name: Set up JDK 17
+      - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
 
-      # Setup Flutter environment (uses a community action that installs Flutter)
-      - name: Setup Flutter
+      - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'
-
-      # Accept Android licenses and install sdk components (if needed)
-      - name: Install Android SDK packages
-        run: |
-          yes | sdkmanager --licenses
-          sdkmanager "platform-tools" "platforms;android-33" "build-tools;33.0.2"
+          channel: stable
+          architecture: x64
 
       - name: Get dependencies
         run: flutter pub get
 
-      - name: Run tests
-        run: flutter test --no-pub || true
-
-      - name: Build release APK
+      - name: Build APK
         run: flutter build apk --release
 
-      - name: Upload APK artifact
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: app-release-apk
+          name: apk
           path: build/app/outputs/flutter-apk/*.apk
